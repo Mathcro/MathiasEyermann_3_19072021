@@ -1,0 +1,141 @@
+
+ @mixin Ombre
+ {
+     box-shadow: 10px 10px 50px $color-fond;
+ }
+
+.bouttons
+{
+    background: linear-gradient(180deg,$color-secondaire,10%, $color-primaire );
+    font-size: 5em;
+    padding: 1em;
+    color: white;
+    border : none;
+    border-radius: 3em;
+    @include Ombre;
+}
+
+.Btn_liste_accueil
+{
+    background-color: $color-fond-clair;
+    border-radius: 90px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom : 1.5em;
+    margin-left: 1em;
+    z-index: 1;
+
+    i
+    {
+        color: $color-icon-btn_liste;
+        font-size: 1.2em;
+        margin-left: 0.2em;
+    }
+
+    p
+    {
+        display: block;
+        margin-left: 1em;
+        font-family: Roboto, bold;
+        font-size: 1em;
+    }
+
+    &:hover
+    {
+        &::after{
+            opacity: 20%;
+        }
+        i
+        {
+            color: $color-primaire;
+        }
+    }
+
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $color-primaire;
+        border-radius: 90px;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+
+}
+
+.Numerotation_liste_accueil
+{
+    display: inline-block;
+    position: relative;
+    left: -50px;
+    background-color: $color-primaire;
+    color: white;
+    border-radius: 50%;
+    padding: 20px 35px 20px 35px;
+    font-size: 1em;
+}
+
+.Etiquette_Menu
+{
+    background-color: white;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-end;
+    font-size: 3em;
+
+    padding: 0.3em 1.5em 1em 1.5em;
+    margin: 1.5em 1em 1.5em 0;
+
+    .Indication_Menu
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h2
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    h3
+    {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    h4
+    {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+.Souligne_Texte
+{
+    border-bottom: 15px solid $color-tertiaire;
+    width: 150px;
+    margin-left: 80px;
+}
+
+.Etiquette_Nouveau
+{
+    background-color: $color-tertiaire;
+    font-size: 10em;
+    position: relative;
+    left: 200px;
+    top: 50px;
+}

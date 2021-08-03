@@ -1,0 +1,38 @@
+
+header
+{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: white;
+    width: 85em;
+
+    div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    img
+    {
+        padding: 2%;
+       width: 50em;
+       height: auto;
+    }
+
+    a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    i
+    {
+        font-size: 5em;
+        position: fixed;
+        top: 50px;
+        left: 100px;
+    }
+
+}

@@ -1,0 +1,53 @@
+
+
+.Img_Menu{
+    margin-top: 25%;
+    img{
+        width: 85em;
+        height: 50em;
+    }
+}
+
+
+.Menu{
+    background-color: $color-fond-clair;
+    width: 85em;
+    border-radius: 200px 200px 0 0;
+    
+
+    .Titre_Menu{
+        padding-top: 100px;
+        padding-left: 100px;
+        font-size: 3em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h1{
+            margin: 0;
+            font-family: "Shrikhand";
+        }
+
+        i{
+            font-size: 2em;
+            margin-right: 1.5em;
+        }
+    }
+    section{
+        animation: Loading_Menu 1000ms 100ms ;
+    }
+
+    section h1 
+    {
+        font-size: 5em;
+        font-weight: normal;
+    }
+
+    input
+    {
+        margin: 200px 200px 200px 350px;
+    }
+
+
+}

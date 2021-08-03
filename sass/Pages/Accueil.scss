@@ -1,0 +1,138 @@
+
+.Acceuil
+{
+    width: 85em;
+    animation: Loading 1000ms $load-delay both;
+}
+
+#Search
+{
+    margin-top: 20%;
+    padding: 2% 5% 30% 5%;
+    
+    background-color: $color-fond-clair;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+
+    .Zone_de_Saisie
+    {
+        background-color: $color-fond-fonce;
+        font-size: 5em;
+        width: 100%;
+        height: 2em;
+        margin: 0;
+        padding: 0;
+        p{
+            display: inline-block;
+            padding-left: 1em;
+            margin-top: 25px;
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+        }
+    }
+   
+    h1
+    {
+        font-family: Roboto, sans-serif;
+        font-size: 7em;
+        margin-top: 200px;
+    }
+
+    h2
+    {
+        font-family: Roboto-Light, sans-serif;
+        font-style:normal;
+        font-size: 4em;
+        margin-bottom: 200px;
+    }
+}
+
+
+
+#Fonctionnement
+{
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+    background-color: white;
+}
+
+
+#Restaurants
+{
+    background-color: $color-fond-clair;
+
+    margin: 0;
+    padding: 0;
+
+    a{
+        text-decoration: none;
+    }
+
+    h1{
+        font-size: 8em; 
+        color: black;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+    }
+    
+
+    .Bloc_Menu
+    {
+        background-color: white;
+        border-radius: 50px ;
+        height: 60em;
+        margin: 4em;
+        @include Ombre;
+
+        img
+        {
+            width: 100%;
+            height: 70%;
+            border-radius: 50px 50px 0 0  ;
+        }
+
+        h1{
+            font-size: 5em;
+            margin: 0;
+            margin-bottom: 0.3em;
+        }
+
+        h2{
+            font-size: 4em;
+            margin: 0;
+            color: #7e7e7e;
+        }
+
+        i{
+            font-size: 6em;
+            padding-right: 1em;
+            color: black;
+
+            &:hover
+            {
+                color: $color-primaire;
+            }
+        }
+    }
+
+    .Bloc_Menu_Affichage
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Bloc_Menu_Texte
+    {
+        padding: 3em;
+    }
+}
