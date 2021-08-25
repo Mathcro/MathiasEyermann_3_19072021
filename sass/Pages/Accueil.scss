@@ -1,53 +1,139 @@
 
 .Acceuil
 {
-    width: 85em;
+    @media screen and (min-width : 641px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width : 640px) {
+        width: 100%;
+    }
+
+
     animation: Loading 1000ms $load-delay both;
+}
+
+#Search_Fonctionnement
+{
+    @media screen and (min-width : 641px) {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin-top: 50px;
+        background-color: white;
+    }
+
+    @media screen and (max-width : 640px) {
+        padding: 0;
+        margin-top: 300px;
+        background-color: white;
+        width: 80em;
+    }
 }
 
 #Search
 {
-    margin-top: 20%;
-    padding: 2% 5% 30% 5%;
-    
-    background-color: $color-fond-clair;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
+    background-color: $color-fond-clair;
+    position: relative;
+    left: 0;
+
+    @media screen and (min-width : 641px) {
+        margin: 10% 0% 0%  30% ;
+        padding: 2% 5% 5% 5%;
+        width: 30%;
+        margin: 5% 0% 10% 10%;
+    }
+
+    @media screen and (max-width : 640px) {
+        padding: 2% 5% 30% 5%;
+        margin: 5% 0% 10% 5%;
+    }
 
     .Zone_de_Saisie
     {
         background-color: $color-fond-fonce;
-        font-size: 5em;
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 100%;
-        height: 2em;
         margin: 0;
         padding: 0;
+        
+        @media screen and (min-width : 641px) {
+            font-size: 1em;
+            height: 2em;
+        }
+    
+        @media screen and (max-width : 640px) {
+            font-size: 5em;
+            height: 2em;
+        }
         p{
             display: inline-block;
-            padding-left: 1em;
-            margin-top: 25px;
             font-family: Roboto, sans-serif;
             font-style: normal;
+
+            @media screen and (min-width : 641px) {
+                padding-left: 8em;
+                margin-top: 7px;
+                padding:0;
+            }
+        
+            @media screen and (max-width : 640px) {
+                padding-left: 1em;
+                margin-top: 25px;
+            }
+        }
+
+        i{
+            @media screen and (min-width : 641px) {
+                padding-left: 6em;
+                margin: 0;
+            }
+        
+            @media screen and (max-width : 640px) {
+                padding-left: 2.2em;
+            }
         }
     }
    
     h1
     {
         font-family: Roboto, sans-serif;
-        font-size: 7em;
-        margin-top: 200px;
+        @media screen and (min-width : 641px) {
+            font-size: 1.2em;
+            margin-top: 25px;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        @media screen and (max-width : 640px) {
+            font-size: 7em;
+            margin-top: 200px;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     h2
     {
         font-family: Roboto-Light, sans-serif;
         font-style:normal;
-        font-size: 4em;
-        margin-bottom: 200px;
+        justify-content: center;
+        text-align: center;
+        @media screen and (min-width : 641px) {
+            font-size: 1em;
+            margin-bottom: 30px;
+        }
+    
+        @media screen and (max-width : 640px) {
+            font-size: 4em;
+            margin-bottom: 200px;
+        }
     }
 }
 
@@ -55,13 +141,21 @@
 
 #Fonctionnement
 {
-    font-size: 4em;
     display: flex;
     flex-direction: column;
-    width: 95%;
-    margin-left: 0.5em;
-    margin-right: 1.5em;
     background-color: white;
+    
+    @media screen and (min-width : 641px) {
+        font-size: 1em;
+        width: 40%;
+        margin: 5% 5% 0% 5%;
+    }
+
+    @media screen and (max-width : 640px) {
+        font-size: 4em;
+        width: 95%;
+        margin: 5% 0% 10% 5%;
+    }
 }
 
 
@@ -69,52 +163,122 @@
 {
     background-color: $color-fond-clair;
 
-    margin: 0;
-    padding: 0;
+
+    @media screen and (min-width : 641px) {
+        width: 90%;
+        margin: 0% 5% 5% 5%;
+    }
+
+    @media screen and (max-width : 640px) {
+        padding: 0;
+        width: 80em;
+        margin: 5% 0% 10% 5%;
+    }
+
+    #Liste_Menu
+    {
+        @media screen and (min-width : 641px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+    }
 
     a{
         text-decoration: none;
     }
 
     h1{
-        font-size: 8em; 
+        
         color: black;
-        padding-top: 0.5em;
-        padding-left: 0.5em;
+
+        @media screen and (min-width : 641px) {
+            font-size: 1.5em; 
+            padding-left: 1em;
+            margin: 0;
+        }
+    
+        @media screen and (max-width : 640px) {
+            font-size: 8em;   
+            padding-top: 0.5em;
+            padding-left: 0.5em;     
+        }
     }
     
 
     .Bloc_Menu
     {
         background-color: white;
-        border-radius: 50px ;
-        height: 60em;
-        margin: 4em;
         @include Ombre;
+
+        @media screen and (min-width : 641px) {
+                height: 10em;
+                margin: 1em; 
+                border-radius: 30px;
+                width: 40%;
+        }
+    
+        @media screen and (max-width : 640px) {
+            height: 60em;
+            margin: 4em;    
+            border-radius: 50px; 
+        }
 
         img
         {
             width: 100%;
             height: 70%;
-            border-radius: 50px 50px 0 0  ;
+
+            @media screen and (min-width : 641px) {
+                border-radius: 30px 30px 0 0;
+            }
+    
+            @media screen and (max-width : 640px) {
+                border-radius: 50px 50px 0 0;
+            }
         }
 
         h1{
-            font-size: 5em;
-            margin: 0;
-            margin-bottom: 0.3em;
+
+            @media screen and (min-width : 641px) {
+                font-size: 1em;
+                padding: 0;
+                margin: 0;
+            }
+        
+            @media screen and (max-width : 640px) {
+                font-size: 5em;
+                margin: 0;
+                margin-bottom: 0.3em;
+            }
         }
 
         h2{
-            font-size: 4em;
             margin: 0;
             color: #7e7e7e;
+            @media screen and (min-width : 641px) {
+                font-size: 0.7em;
+            }
+        
+            @media screen and (max-width : 640px) {
+                font-size: 4em;
+            }
         }
 
         i{
-            font-size: 6em;
             padding-right: 1em;
             color: black;
+            @media screen and (min-width : 641px) {
+                font-size: 1.3em;
+                margin-right: 1em;
+            }
+        
+            @media screen and (max-width : 640px) {
+                font-size: 6em;
+            }
 
             &:hover
             {
@@ -122,6 +286,7 @@
             }
         }
     }
+
 
     .Bloc_Menu_Affichage
     {
@@ -133,6 +298,14 @@
 
     .Bloc_Menu_Texte
     {
-        padding: 3em;
+        
+        @media screen and (min-width : 641px) {
+            padding: 0.3em;
+            padding-left: 2em;
+        }
+    
+        @media screen and (max-width : 640px) {
+            padding: 3em;
+        }
     }
 }

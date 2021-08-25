@@ -4,7 +4,15 @@ header
     position: fixed;
     top: 0; left: 0; right: 0;
     background-color: white;
-    width: 85em;
+
+    @media screen and (min-width : 640px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width : 640px) {
+        width: 85em;
+    }
+    
 
     div
     {
@@ -16,9 +24,16 @@ header
 
     img
     {
-        padding: 2%;
-       width: 50em;
+       padding: 2%;
        height: auto;
+
+       @media screen and (min-width : 640px) {
+        width: 15em;
+    }
+
+    @media screen and (max-width : 640px) {
+        width: 50em;
+    }
     }
 
     a
@@ -29,10 +44,19 @@ header
 
     i
     {
-        font-size: 5em;
         position: fixed;
-        top: 50px;
-        left: 100px;
+
+        @media screen and (min-width : 640px) {
+            font-size: 2em;
+            top: 30px;
+            left: 300px;
+        }
+
+        @media screen and (max-width : 640px) {
+            font-size: 5em;
+            top: 50px;
+            left: 100px;
+        }
     }
 
 }
