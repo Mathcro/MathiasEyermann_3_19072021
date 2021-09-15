@@ -1,4 +1,10 @@
 
+
+body, html
+{
+    width:90em;
+}
+
 .Img_Menu{
     position: absolute;
     z-index: -1;
@@ -13,7 +19,7 @@
     
     img{
         
-
+        object-fit: cover;
         @media screen and (min-width : 641px) {
             width: 55em;
             height: 25em;
@@ -21,7 +27,7 @@
         }
     
         @media screen and (max-width : 640px) {
-            width: 85em;
+            width: 92em;
             height: 55em;
             margin: 0;
         } 
@@ -31,6 +37,9 @@
 
 .Menu{
     background-color: $color-fond-clair;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media screen and (min-width : 641px) {
         width: 55em;
@@ -40,10 +49,11 @@
     }
 
     @media screen and (max-width : 640px) {
-        width: 85em;
+        width: 92em;
         margin: 0;
         padding: 0;
         border-radius: 200px 200px 0 0;
+        margin-top: 830px;
 
     } 
 
@@ -62,7 +72,7 @@
         }
     
         @media screen and (max-width : 640px) {
-            font-size: 3em;
+            font-size: 50px ;
             padding-top: 100px;
         }
 
@@ -82,23 +92,18 @@
 
     section h1 
     {
-        font-weight: normal;
+        font-weight:normal;
+        font-family: "Roboto-light",sans-serif;
 
         @media screen and (min-width : 641px) {
             font-size: 1.5em;
         }
     
         @media screen and (max-width : 640px) {
-            font-size: 5em;
+            font-size: 90px;
+            text-transform: uppercase;
         }
     }
-
-    input
-    {
-        margin: 200px 200px 200px 350px;
-    }
-
-
 }
 
 .Etiquette_Menu
@@ -111,18 +116,20 @@
     align-content: flex-end;
     align-items: flex-end;
     height: 4em;
-
+    width: 20em;
     padding: 0.3em 1.5em 1em 1.5em;
     margin: 1.5em 1em 1.5em 0;
 
-    animation: Loading_Menu_scale 1000ms 2000ms ;
+    
 
+    animation: Loading_Menu_scale 500ms ease-out, Loading_Menu_translate 500ms ease-in-out ;
     @media screen and (min-width : 641px) {
         font-size: 1.2em;
     }
 
     @media screen and (max-width : 640px) {
         font-size: 3em;
+        width:25em;
     }
 
     .Indication_Menu
@@ -132,23 +139,25 @@
         justify-content: space-between;
         overflow: hidden;
         white-space: nowrap;
-        text-overflow: ellipsis;
+        text-overflow: ellipsis;        
     }
 
     h2
     {
         margin: 0;
+        margin-bottom: 20px;
         padding: 0;
         overflow: hidden;
-        white-space: nowrap;
+        white-space: wrap;
         text-overflow: ellipsis;
+        font-family: "Roboto",sans-serif;
 
         @media screen and (min-width : 641px) {
             font-size: 1.5em;
         }
     
         @media screen and (max-width : 640px) {
-            font-size: 1.4em;
+            font-size: 70px;
         }
     }
 
@@ -160,17 +169,35 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        font-family: "Roboto-light",sans-serif;
     }
 
     h4
     {
-        margin: 0 1em 0  0;
-        padding: 0;
+        margin: 0 0 0px  10px;
+        font-family: "Roboto",sans-serif;
+        padding: 40px;
+        padding-bottom: 0;
     }
 
-    &::before{
-        transform: scale(0);
+    i{
+        display: inline-flex;
+        position: relative;
+        color: white;  
+        visibility: hidden;
+        @media screen and (min-width : 641px) {
+            font-size: 1.5em;
+            left: 30px;
+            top: -10px;  
+        }
+    
+        @media screen and (max-width : 640px) {
+            font-size: 90px;
+            left: 60px;
+            top: -30px;  
+        }
     }
+
 
     &:nth-child(1){
         animation-delay: 0.1s;
@@ -184,4 +211,18 @@
     &:nth-child(4){
         animation-delay: 1s;
     }
+
+    &:hover
+    {
+            animation: Choix_Menu 1000ms forwards;
+            & > i{
+                animation:  Anim_icon 900ms ease-in-out forwards, Spin_icon 800ms ease-in-out forwards;               
+            } 
+    }
+    &::after
+        {
+        padding-right: 50px;
+        border-right: 250px solid $color-tertiaire;
+        }   
+
 }

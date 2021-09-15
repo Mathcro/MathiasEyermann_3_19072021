@@ -1,7 +1,7 @@
 
  @mixin Ombre
  {
-     box-shadow: 10px 10px 50px $color-fond;
+     box-shadow: 0 10px 20px  $color-fond;
  }
 
 .bouttons
@@ -10,7 +10,8 @@
     color: white;
     border : none;
     border-radius: 3em;
-    padding: 1em;
+
+    margin-left: 10%;
 
     @include Ombre;
     transform: scale(1);
@@ -20,7 +21,12 @@
     }
 
     @media screen and (max-width : 640px) {
-        font-size: 5em;
+        font-size: 60px;
+        margin-bottom: 300px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     &:hover{
@@ -132,10 +138,17 @@
 .Etiquette_Nouveau
 {
     background-color: $color-tertiaire;
-    font-size: 10em;
-    position: relative;
-    left: 200px;
-    top: 50px;
-
-    animation: Loading_Menu 1000ms 100ms ;
+    position: absolute;
+    display: inline-block;
+    margin-left: 70%;
+    margin-top: 30px;
+    border-radius: 20px;
+    
+    p{
+        font-size: 50px;
+        padding: 30px;
+        margin: 0;
+        color: #006400;
+        font-family: "Roboto", sans-serif;
+    }
 }

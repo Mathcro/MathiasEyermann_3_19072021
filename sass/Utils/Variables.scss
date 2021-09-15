@@ -2,12 +2,12 @@ $color-primaire : #9356DC;
 $color-secondaire : #FF79DA;
 $color-tertiaire : #99E2D0;
 
-$color-fond : #353535;
+$color-fond : #AAA;
 $color-fond-clair : #f6f6f6;
 $color-fond-fonce : #eaeaea;
 $color-text-footer : white;
 
 $color-icon-btn_liste : #7e7e7e;
 
-$color-degrade : linear-gradient(180deg,$color-secondaire,10%, $color-primaire );
+$color-degrade : linear-gradient(180deg,$color-secondaire,50%, $color-primaire );
 

@@ -1,4 +1,9 @@
 
+body, html
+{
+    width:84em;
+}
+
 .Acceuil
 {
     @media screen and (min-width : 641px) {
@@ -29,7 +34,7 @@
         padding: 0;
         margin-top: 300px;
         background-color: white;
-        width: 80em;
+        width: 100%;
     }
 }
 
@@ -49,8 +54,6 @@
     }
 
     @media screen and (max-width : 640px) {
-        padding: 2% 5% 30% 5%;
-        margin: 5% 0% 10% 5%;
     }
 
     .Zone_de_Saisie
@@ -103,7 +106,8 @@
    
     h1
     {
-        font-family: Roboto, sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
         @media screen and (min-width : 641px) {
             font-size: 1.2em;
             margin-top: 25px;
@@ -112,7 +116,7 @@
         }
     
         @media screen and (max-width : 640px) {
-            font-size: 7em;
+            font-size: 6em;
             margin-top: 200px;
             justify-content: center;
             text-align: center;
@@ -121,7 +125,7 @@
 
     h2
     {
-        font-family: Roboto-Light, sans-serif;
+        font-family: "Roboto-Light", sans-serif;
         font-style:normal;
         justify-content: center;
         text-align: center;
@@ -153,7 +157,7 @@
 
     @media screen and (max-width : 640px) {
         font-size: 4em;
-        width: 95%;
+        width: 90%;
         margin: 5% 0% 10% 5%;
     }
 }
@@ -171,8 +175,8 @@
 
     @media screen and (max-width : 640px) {
         padding: 0;
-        width: 80em;
-        margin: 5% 0% 10% 5%;
+        width: 100%;
+        
     }
 
     #Liste_Menu
@@ -231,6 +235,7 @@
         {
             width: 100%;
             height: 70%;
+            object-fit: cover;
 
             @media screen and (min-width : 641px) {
                 border-radius: 30px 30px 0 0;
@@ -265,6 +270,7 @@
         
             @media screen and (max-width : 640px) {
                 font-size: 4em;
+                padding-left: 0.5em;
             }
         }
 
@@ -305,7 +311,8 @@
         }
     
         @media screen and (max-width : 640px) {
-            padding: 3em;
+            
+            
         }
     }
 }

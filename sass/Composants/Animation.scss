@@ -1,0 +1,54 @@
+
+@keyframes Anim_icon{
+    0% {
+        transform: translate(20px);
+    }
+    100% {
+        transform: translate(80px);
+    }
+}
+
+@keyframes Spin_icon{
+    0% {
+        transform: rotate(0);
+        visibility: hidden;
+        margin-right: -30px;
+    }
+    30%{
+        margin-right: -80px;
+    }
+    100% {
+        transform: rotate(360deg) ;
+        visibility: visible;
+        margin-right: -150px;
+    }
+}
+
+
+@keyframes Choix_Menu{
+    0% {
+        border-right: 0px solid $color-tertiaire;
+    }
+    100% {
+        width: 20em;
+        border-right: 200px solid $color-tertiaire;
+    }
+}
+
+.fa-heart {
+    color: black;
+    border-radius: 50%;
+    padding:.1em;
+}
+
+.fa-heart::before {
+    transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before{
+    content: "\f004";
+    font-weight: bold;
+    color: $color-degrade;
+    cursor: pointer;
+}
+
