@@ -14,8 +14,14 @@
         visibility: hidden;
         margin-right: -30px;
     }
+    20%{
+        margin-right: -60px;
+    }
     30%{
         margin-right: -80px;
+    }
+    60%{
+        margin-right: -120px;
     }
     100% {
         transform: rotate(360deg) ;

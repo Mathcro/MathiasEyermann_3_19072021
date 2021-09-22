@@ -63,8 +63,6 @@ body, html
         padding-left: 100px;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
 
         @media screen and (min-width : 641px) {
             font-size: 1.3em;
@@ -78,15 +76,25 @@ body, html
 
         h1{
             margin: 0;
-            font-family: "Shrikhand";
+            font-family: "Shrikhand",sans-serif;
+            padding-right: 90px;
         }
 
         i{
             font-size: 2em;
-            margin-right: 1.5em;
+            
+            @media screen and (min-width : 641px) {
+                margin-right: 3.5em;
+            }
+        
+            @media screen and (max-width : 640px) {
+                margin-right: 1.5em;
+            }
         }
     }
-    section{
+
+    section
+    {
         animation: Loading_Menu-translate 1000ms 100ms ;
     }
 
@@ -109,7 +117,6 @@ body, html
 .Etiquette_Menu
 {
     background-color: white;
-    border-radius: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,16 +127,18 @@ body, html
     padding: 0.3em 1.5em 1em 1.5em;
     margin: 1.5em 1em 1.5em 0;
 
-    
-
     animation: Loading_Menu_scale 500ms ease-out, Loading_Menu_translate 500ms ease-in-out ;
+    
     @media screen and (min-width : 641px) {
         font-size: 1.2em;
+        width: 30em;
+        border-radius: 25px;
     }
 
     @media screen and (max-width : 640px) {
         font-size: 3em;
         width:25em;
+        border-radius: 70px;
     }
 
     .Indication_Menu
@@ -178,6 +187,8 @@ body, html
         font-family: "Roboto",sans-serif;
         padding: 40px;
         padding-bottom: 0;
+        position: absolute;
+        right:200px
     }
 
     i{
@@ -186,7 +197,7 @@ body, html
         color: white;  
         visibility: hidden;
         @media screen and (min-width : 641px) {
-            font-size: 1.5em;
+            font-size: 2.5em;
             left: 30px;
             top: -10px;  
         }
