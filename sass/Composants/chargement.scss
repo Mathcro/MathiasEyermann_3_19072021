@@ -51,11 +51,27 @@ $load-delay: $char-bar-dur + $char-bar-delay;
 
 .Loader{
     position: absolute;
-    @media screen and (min-width : 640px) {
+
+    /* Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape){
         width: 100%;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Tablette paysage*/
+    @media screen and (min-width : 1023px) and (orientation : landscape) {
+        width: 85em;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
+        width: 85em;
+        top: 200px;
+    }
+
+    /*Phone*/
+    @media screen and (max-width : 800px) {
         width: 85em;
         margin-top: 100px;
     }
@@ -73,11 +89,18 @@ $load-delay: $char-bar-dur + $char-bar-delay;
 .lettre
 {
     color: $color-secondaire;
-    @media screen and (min-width : 640px) {
+    /* Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape) {
         font-size: 60px;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
+        font-size: 90px;
+    }
+
+    /*Phone*/
+    @media screen and (max-width : 800px) {
         font-size: 90px;
     }
     letter-spacing: 15px;

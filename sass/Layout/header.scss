@@ -4,15 +4,23 @@ header
     position: fixed;
     top: 0; left: 0; right: 0;
     background-color: white;
+    z-index: 1;
 
-    @media screen and (min-width : 640px) {
+    /*Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape)  {
         width: 100%;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
         width: 100%;
         margin: 0;
-      
+    }
+
+    /*Phone*/
+    @media screen and (orientation : portrait) {
+        width: 100%;
+        margin: 0;
     }
     
 
@@ -29,13 +37,20 @@ header
        padding: 2%;
        height: auto;
 
-       @media screen and (min-width : 640px) {
+       /*Desktop*/
+       @media screen and (min-width : 801px) and (orientation : landscape) {
         width: 15em;
-    }
+        }
 
-    @media screen and (max-width : 640px) {
-        width: 48em;
-    }
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            width: 48em;
+        }
+
+        /*Phone*/
+        @media screen and (orientation : portrait) {
+            width: 48em;
+        }
     }
 
     a
@@ -48,13 +63,23 @@ header
     {
         position: fixed;
 
-        @media screen and (min-width : 640px) {
+        /*Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape)  {
             font-size: 2em;
             top: 30px;
             left: 300px;
         }
 
-        @media screen and (max-width : 640px) {
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            font-size: 5em;
+            top: 50px;
+            left: 100px;
+            padding-left: 30px;
+        }
+
+        /*Phone*/
+        @media screen and (orientation : portrait) {
             font-size: 5em;
             top: 50px;
             left: 100px;

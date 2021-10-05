@@ -1,37 +1,51 @@
 
-@keyframes Anim_icon{
+@keyframes Anim_icon_phone{
     0% {
         transform: translate(20px);
     }
     100% {
-        transform: translate(80px);
+        transform: translate(150px);
     }
 }
 
-@keyframes Spin_icon{
+@keyframes Anim_icon_desktop{
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(10px);
+    }
+}
+
+@keyframes Spin_icon_phone{
     0% {
         transform: rotate(0);
         visibility: hidden;
-        margin-right: -30px;
-    }
-    20%{
-        margin-right: -60px;
-    }
-    30%{
-        margin-right: -80px;
-    }
-    60%{
-        margin-right: -120px;
+        left: 120px;
     }
     100% {
         transform: rotate(360deg) ;
         visibility: visible;
-        margin-right: -150px;
+        left: 210px;
+    }
+}
+
+@keyframes Spin_icon_desktop{
+    0% {
+        transform: rotate(0);
+        visibility: hidden;
+        left: 80px;
+    }
+    100% {
+        transform: rotate(360deg) ;
+        visibility: visible;
+        left: 100px;
     }
 }
 
 
-@keyframes Choix_Menu{
+
+@keyframes Choix_Menu_phone{
     0% {
         border-right: 0px solid $color-tertiaire;
     }
@@ -41,20 +55,58 @@
     }
 }
 
-.fa-heart {
-    color: black;
-    border-radius: 50%;
-    padding:.1em;
+@keyframes Choix_Menu_desktop{
+    0% {
+        border-right: 0px solid $color-tertiaire;
+    }
+    100% {
+        width: 25em;
+        border-right: 100px solid $color-tertiaire;
+    }
 }
 
-.fa-heart::before {
-    transition: color 1s ease-out;
+@keyframes gradient-fade{
+    0%{
+        color:linear-gradient(to top,$color-secondaire,5%, $color-primaire );
+    }
+    20%{
+        color:linear-gradient(to top,$color-secondaire,10%, $color-primaire );
+    }
+    40%{
+        color:linear-gradient(to top,$color-secondaire,15%, $color-primaire );
+    }
+    60%{
+        color:linear-gradient(to top,$color-secondaire,25%, $color-primaire );
+    }
+    80%{
+        color:linear-gradient(to top,$color-secondaire,30%, $color-primaire );
+    }
+    100%{
+        color:linear-gradient(to top,$color-secondaire,50%, $color-primaire );
+    }
+
 }
 
-.fa-heart:hover::before{
-    content: "\f004";
-    font-weight: bold;
-    color: $color-degrade;
-    cursor: pointer;
+/*Animation coeur*/
+.anim {
+    margin-top: 2px;
+    position: absolute;
+    background: linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+  -webkit-background-clip:text;
+  color: transparent;
+    transform: scale(0);
+}
+.icons:hover .anim {
+    transform-origin: bottom;
+    transform: scale(1);
+    transition: transform 1000ms;
+}
+.heart {
+    position: relative;
+    color: #000;
+}
+.icons:hover .heart {
+    color: transparent;
 }
 

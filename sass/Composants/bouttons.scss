@@ -4,25 +4,41 @@
      box-shadow: 0 10px 20px  $color-fond;
  }
 
+ 
+.intro_btn {
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border: none;
+    border-radius: 100px;
+    box-shadow: 5px 5px 20px #CFCFCF;
+}
+
 .bouttons
 {
-    background: $color-degrade;
     color: white;
-    border : none;
-    border-radius: 3em;
-
-    @include Ombre;
     transform: scale(1);
 
-    @media screen and (min-width : 640px) {
-        font-size: 1em;
+    /*Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape) {
+        font-size: 1.5em;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: 20px;
         padding-left: 20px;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
+        font-size: 60px;
+        margin-bottom: 300px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+
+    /*Phone*/
+    @media screen and (orientation : portrait) {
         font-size: 60px;
         margin-bottom: 300px;
         padding-top: 70px;
@@ -49,11 +65,18 @@
 
     @include Ombre;
 
-    @media screen and (min-width : 640px) {
+    /*Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape) {
         margin-left: 1em;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
+        margin-left: 1em;
+    }
+
+    /*Phone*/
+    @media screen and (orientation : portrait) {
         margin-left: 1em;
     }
 
@@ -106,17 +129,26 @@
     background-color: $color-primaire;
     color: white;
     border-radius: 50%;
+    font-size: 1em;
 
-    @media screen and (min-width : 640px) {
+    /*Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape) {
         padding: 5px 15px 5px 15px;
         left: -20px;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
         padding: 20px 35px 20px 35px;
         left: -50px;
     }
-    font-size: 1em;
+
+    /*Phone*/
+    @media screen and (orientation : portrait) {
+        padding: 20px 35px 20px 35px;
+        left: -50px;
+    }
+    
 }
 
 
@@ -126,12 +158,20 @@
 {
     border-bottom: 15px solid $color-tertiaire;
 
-    @media screen and (min-width : 640px) {
+    /*Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape) {
         width: 50px;
         margin-left: 80px;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
+        width: 150px;
+        margin-left: 80px;
+    }
+
+    /*Phone*/
+    @media screen and (orientation : portrait) {
         width: 150px;
         margin-left: 80px;
     }
@@ -143,14 +183,36 @@
     position: absolute;
     display: inline-block;
 
-
-    @media screen and (min-width : 640px) {
-        margin-left: 410px;
+    /*Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape){
+        margin-left: 400px;
         margin-top: 10px;
         border-radius: 10px;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Tablette paysage*/
+    @media screen and (min-width : 1023px) and (orientation : landscape) {
+        margin-left: 400px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    /* Tablette portrait*/
+    @media screen and (min-width : 1023px) and (orientation : portrait) {
+        margin-left: 70%;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
+        margin-left: 70%;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+
+    /*Phone*/
+    @media screen and (max-width : 800px) {
         margin-left: 70%;
         margin-top: 30px;
         border-radius: 20px;
@@ -160,13 +222,22 @@
         color: #006400;
         font-family: "Roboto", sans-serif;
 
-        @media screen and (min-width : 640px) {
+        /*Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape) {
             font-size: 20px;
             padding: 10px;
             margin: 0;
         }
+
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            font-size: 50px;
+            padding: 30px;
+            margin: 0;
+        }  
     
-        @media screen and (max-width : 640px) {
+        /*Phone*/
+        @media screen and (orientation : portrait) {
             font-size: 50px;
             padding: 30px;
             margin: 0;

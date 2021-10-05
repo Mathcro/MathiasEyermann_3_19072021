@@ -2,31 +2,66 @@
 
 body, html
 {
-    width:90em;
+    
+
+    /*Grand ecrans*/
+    @media screen and (min-width : 1751px) {
+        width: 110em;
+    }
+    /*Moyen ecrans*/
+    @media screen and (min-width : 801px) {
+        width: 90em;
+    }
+    /*Petit ecrans*/
+    @media screen and (max-width : 800px) {
+        width: 90em;
+    }
 }
 
 .Img_Menu{
     position: absolute;
     z-index: -1;
-
-    @media screen and (min-width : 641px) {
+    /* Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape) {
         top: 50px;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
+        top: 100px;
+    }
+
+    /*Phone*/
+    @media screen and (orientation : portrait) {
         top: 100px;
     } 
     
     img{
         
         object-fit: cover;
-        @media screen and (min-width : 641px) {
-            width: 55em;
+        /* Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape) {
+            width: 90em;
             height: 25em;
             margin-top: 50px;
         }
+
+        /* Tablette paysage*/
+        @media screen and (min-width : 1023px) and (orientation : landscape) {
+            width: 80em;
+            height: 25em;
+            margin-top: 50px;
+        }
+
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            width: 92em;
+            height: 55em;
+            margin: 0;
+        }
     
-        @media screen and (max-width : 640px) {
+        /*Phone*/
+        @media screen and (orientation : portrait) {
             width: 92em;
             height: 55em;
             margin: 0;
@@ -40,21 +75,39 @@ body, html
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media screen and (min-width : 641px) {
-        width: 55em;
+    
+    /* Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape) {
+        width: 90em;
         margin-top: 400px;
         border-radius: 100px 100px 0 0;
-        margin-left: 20%;
+        margin-left: 10em;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Tablette paysage*/
+    @media screen and (min-width : 1023px) and (orientation : landscape) {
+        width: 80em;
+        margin-top: 400px;
+        border-radius: 100px 100px 0 0;
+        margin-left: 5em;
+    }
+
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
         width: 92em;
         margin: 0;
         padding: 0;
         border-radius: 200px 200px 0 0;
         margin-top: 830px;
+    }
 
+    /*Phone*/
+    @media screen and (orientation : portrait) {
+        width: 92em;
+        margin: 0;
+        padding: 0;
+        border-radius: 200px 200px 0 0;
+        margin-top: 830px;
     } 
 
     .Titre_Menu{
@@ -64,12 +117,20 @@ body, html
         display: flex;
         flex-direction: row;
 
-        @media screen and (min-width : 641px) {
+        /* Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape) {
             font-size: 1.3em;
             padding-top: 50px;
         }
     
-        @media screen and (max-width : 640px) {
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            font-size: 50px ;
+            padding-top: 100px;
+        }
+
+        /*Phone*/
+        @media screen and (orientation : portrait){
             font-size: 50px ;
             padding-top: 100px;
         }
@@ -83,13 +144,31 @@ body, html
         i{
             font-size: 2em;
             
-            @media screen and (min-width : 641px) {
+            /* Desktop*/
+            @media screen and (min-width : 801px) and (orientation : landscape) {
                 margin-right: 3.5em;
             }
-        
-            @media screen and (max-width : 640px) {
+
+            /* Phone paysage*/
+            @media screen and (max-width : 800px) and (orientation : landscape) {
                 margin-right: 1.5em;
             }
+        
+            /*Phone*/
+            @media screen and (orientation : portrait) {
+                margin-right: 1.5em;
+            }
+        }
+    }
+
+    .Liste_Menu
+    {
+        /* Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape){
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: center;
         }
     }
 
@@ -103,11 +182,19 @@ body, html
         font-weight:normal;
         font-family: "Roboto-light",sans-serif;
 
-        @media screen and (min-width : 641px) {
+        /* Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape) {
             font-size: 1.5em;
         }
+
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            font-size: 90px;
+            text-transform: uppercase;
+        }
     
-        @media screen and (max-width : 640px) {
+        /*Phone*/
+        @media screen and (orientation : portrait){
             font-size: 90px;
             text-transform: uppercase;
         }
@@ -120,8 +207,6 @@ body, html
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: flex-end;
-    align-items: flex-end;
     height: 4em;
     width: 20em;
     padding: 0.3em 1.5em 1em 1.5em;
@@ -129,13 +214,22 @@ body, html
 
     animation: Loading_Menu_scale 500ms ease-out, Loading_Menu_translate 500ms ease-in-out ;
     
-    @media screen and (min-width : 641px) {
+    /* Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape) {
         font-size: 1.2em;
         width: 30em;
         border-radius: 25px;
     }
 
-    @media screen and (max-width : 640px) {
+    /* Phone paysage*/
+    @media screen and (max-width : 800px) and (orientation : landscape) {
+        font-size: 3em;
+        width:25em;
+        border-radius: 70px;
+    }
+
+    /*Phone*/
+    @media screen and (orientation : portrait) {
         font-size: 3em;
         width:25em;
         border-radius: 70px;
@@ -161,11 +255,18 @@ body, html
         text-overflow: ellipsis;
         font-family: "Roboto",sans-serif;
 
-        @media screen and (min-width : 641px) {
+        /* Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape) {
             font-size: 1.5em;
         }
-    
-        @media screen and (max-width : 640px) {
+
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            font-size: 70px;
+        }
+
+        /*Phone*/
+        @media screen and (orientation : portrait) {
             font-size: 70px;
         }
     }
@@ -183,29 +284,48 @@ body, html
 
     h4
     {
-        margin: 0 0 0px  10px;
         font-family: "Roboto",sans-serif;
-        padding: 40px;
-        padding-bottom: 0;
-        position: absolute;
-        right:200px
+        position: relative;
+        /* Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape) {
+            top: 30px;
+            z-index: 0;
+        }
+
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            top: 70px;
+        }
+    
+        /*Phone*/
+        @media screen and (orientation : portrait) {
+            top: 70px;
+        }
     }
 
     i{
         display: inline-flex;
         position: relative;
-        color: white;  
-        visibility: hidden;
-        @media screen and (min-width : 641px) {
+        color: white;
+        margin: 0;
+        padding: 0;
+        /* Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape) {
             font-size: 2.5em;
-            left: 30px;
-            top: -10px;  
+            top: -61px;
+            z-index: 0;
+        }
+
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            font-size: 90px;
+            top: -130px;
         }
     
-        @media screen and (max-width : 640px) {
+        /*Phone*/
+        @media screen and (orientation : portrait){
             font-size: 90px;
-            left: 60px;
-            top: -30px;  
+            top: -130px;
         }
     }
 
@@ -225,15 +345,64 @@ body, html
 
     &:hover
     {
-            animation: Choix_Menu 1000ms forwards;
-            & > i{
-                animation:  Anim_icon 900ms ease-in-out forwards, Spin_icon 800ms ease-in-out forwards;               
+        /* Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape) {
+            animation: Choix_Menu_desktop 1000ms forwards;
+
+            & > div i{
+                animation:  Anim_icon_desktop 900ms ease-in-out forwards, Spin_icon_desktop 800ms ease-in-out forwards;               
             } 
+        }
+
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            animation: Choix_Menu_phone 1000ms forwards;
+
+            & > div i{
+                animation:  Anim_icon_phone 900ms ease-in-out forwards, Spin_icon_phone 800ms ease-in-out forwards;               
+            } 
+        }
+
+        /*Phone*/
+        @media screen and (orientation : portrait) {
+            animation: Choix_Menu_phone 1000ms forwards;
+
+            & > div i{
+                animation:  Anim_icon_phone 900ms ease-in-out forwards, Spin_icon_phone 800ms ease-in-out forwards;               
+            } 
+        }
+            
     }
     &::after
         {
-        padding-right: 50px;
-        border-right: 250px solid $color-tertiaire;
+        
+        /* Desktop*/
+        @media screen and (min-width : 801px) and (orientation : landscape) {
+            padding-right: 10px;
+            border-right: 100px solid $color-tertiaire;
+        }
+
+        /* Phone paysage*/
+        @media screen and (max-width : 800px) and (orientation : landscape) {
+            padding-right: 50px;
+            border-right: 250px solid $color-tertiaire;
+        }
+
+    
+        @media screen and (orientation : portrait) {
+            padding-right: 50px;
+            border-right: 250px solid $color-tertiaire;
+        }
         }   
+
+}
+
+input
+{
+    /* Desktop*/
+    @media screen and (min-width : 801px) and (orientation : landscape) {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 
 }
