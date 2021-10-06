@@ -28,10 +28,9 @@ body, html
         margin-top: 180px;
     }
     
-
+    /*Phone*/
     @media screen and (max-width : 800px) {
-        width: 100%;
-        margin-left: 20px;
+        width: auto;
     }
 
 
@@ -62,7 +61,7 @@ body, html
     /*Phone*/
     @media screen and (orientation : portrait) {
         padding: 0;
-        margin-top: 300px;
+        margin-top: 230px;
         background-color: white;
         width: 100%;
     }
@@ -81,6 +80,11 @@ body, html
         width: 40%;
         margin-right: 25px;
         padding: 40px;
+    }
+
+    /*Phone*/
+    @media screen and (orientation : portrait) {
+        width: 100%;
     }
 
     .Zone_de_Saisie
@@ -313,6 +317,7 @@ body, html
 
     .Bloc_Menu
     {
+        display: flex;
         background-color: white;
         @include Ombre;
 
