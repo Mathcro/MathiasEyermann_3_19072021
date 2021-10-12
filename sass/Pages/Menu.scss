@@ -177,7 +177,7 @@ body, html
         animation: Loading_Menu-translate 1000ms 100ms ;
     }
 
-    section h1 
+    section h2 
     {
         font-weight:normal;
         font-family: "Roboto-light",sans-serif;
@@ -245,7 +245,7 @@ body, html
         text-overflow: ellipsis;        
     }
 
-    h2
+    h3
     {
         margin: 0;
         margin-bottom: 20px;
@@ -271,7 +271,7 @@ body, html
         }
     }
 
-    h3
+    h4
     {
         margin: 0;
         padding: 0;
@@ -282,7 +282,7 @@ body, html
         font-family: "Roboto-light",sans-serif;
     }
 
-    h4
+    h5
     {
         font-family: "Roboto",sans-serif;
         position: relative;
