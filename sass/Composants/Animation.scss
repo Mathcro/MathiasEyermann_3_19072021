@@ -65,28 +65,6 @@
     }
 }
 
-@keyframes gradient-fade{
-    0%{
-        color:linear-gradient(to top,$color-secondaire,5%, $color-primaire );
-    }
-    20%{
-        color:linear-gradient(to top,$color-secondaire,10%, $color-primaire );
-    }
-    40%{
-        color:linear-gradient(to top,$color-secondaire,15%, $color-primaire );
-    }
-    60%{
-        color:linear-gradient(to top,$color-secondaire,25%, $color-primaire );
-    }
-    80%{
-        color:linear-gradient(to top,$color-secondaire,30%, $color-primaire );
-    }
-    100%{
-        color:linear-gradient(to top,$color-secondaire,50%, $color-primaire );
-    }
-
-}
-
 /*Animation coeur*/
 .anim {
     margin-top: 2px;
