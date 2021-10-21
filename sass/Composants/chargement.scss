@@ -51,7 +51,14 @@ $load-delay: $char-bar-dur + $char-bar-delay;
 
 .Loader{
     position: absolute;
-
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 0;
     /* Desktop*/
     @media screen and (min-width : 801px) and (orientation : landscape){
         width: 100%;
@@ -76,19 +83,16 @@ $load-delay: $char-bar-dur + $char-bar-delay;
         margin-top: 100px;
     }
 
-    height: 100%;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    z-index: 0;
+
 }
 
 .lettre
 {
     color: $color-secondaire;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash $char-bar-delay $char-bar-dur ;
+    
     /* Desktop*/
     @media screen and (min-width : 801px) and (orientation : landscape) {
         font-size: 60px;
@@ -103,9 +107,7 @@ $load-delay: $char-bar-dur + $char-bar-delay;
     @media screen and (max-width : 800px) {
         font-size: 90px;
     }
-    letter-spacing: 15px;
-    margin-bottom: 150px;
-    animation: flash $char-bar-delay $char-bar-dur ;
+
 
     &:nth-child(1){
         animation-delay: 0.1s;

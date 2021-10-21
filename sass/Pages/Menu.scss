@@ -1,15 +1,14 @@
 
 
-body, html
+body
 {
-    
-
+    margin: 0%; 
     /*Grand ecrans*/
     @media screen and (min-width : 1751px) {
-        width: 110em;
+        width: 100%;
     }
     /*Moyen ecrans*/
-    @media screen and (min-width : 801px) {
+    @media screen and (min-width : 801px) and  (max-width : 1750px) {
         width: 90em;
     }
     /*Petit ecrans*/

@@ -1,5 +1,5 @@
 
-body, html
+body
 {
     @media screen and (max-width : 800px) {
         width:100%;
@@ -12,7 +12,7 @@ body, html
 
     /* Desktop*/
     @media screen and (min-width : 801px) {
-        width: 90em;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -30,7 +30,7 @@ body, html
     
     /*Phone*/
     @media screen and (max-width : 800px) {
-        width: auto;
+        width: 100%;
     }
 
 
@@ -129,13 +129,13 @@ body, html
             }
             /* Phone paysage*/
             @media screen and (max-width : 800px) and (orientation : landscape) {
-                padding-left: 1em;
+                padding-left: 0;
                 margin-top: 25px;
             }
         
             /*Phone*/
             @media screen and (orientation : portrait) {
-                padding-left: 1em;
+                padding-left: 0;
                 margin-top: 25px;
             }
         }
@@ -171,7 +171,7 @@ body, html
         
     
         /*Phone*/
-        @media screen and (orientation : portrait) {
+        @media screen and (max-width : 800px) and (orientation : portrait) {
             font-size: 6em;
             margin-top: 200px;
             padding-right: 5%;
@@ -235,14 +235,12 @@ body, html
     @media screen and (max-width : 800px) and (orientation : landscape) {
         font-size: 4em;
         width: 90%;
-        margin: 5% 0% 10% 5%;
     }
 
     /*Phone*/
-    @media screen and (orientation : portrait) {
+    @media screen and (max-width : 800px) and (orientation : portrait) {
         font-size: 4em;
         width: 90%;
-        margin: 5% 0% 10% 5%;
     }
 }
 
@@ -252,10 +250,10 @@ body, html
     background-color: $color-fond-clair;
     margin-bottom: 5%;
 
+
     /* Desktop*/
     @media screen and (min-width : 801px) and (orientation : landscape){
-        width: 90%;
-        margin-left: 5%;
+        width: 100%;
     }
 
     /* Phone paysage*/
@@ -266,10 +264,10 @@ body, html
     }
 
     /*Phone*/
-    @media screen and (orientation : portrait) {
+    @media screen and (max-width : 800px) and (orientation : portrait) {
         padding: 0;
         padding-bottom: 5%;
-        width: 100%;
+        width: 98%;
     }
 
     #Liste_Menu
@@ -326,7 +324,7 @@ body, html
                 height: 15em;
                 margin: 1em; 
                 border-radius: 30px;
-                width: 40%;
+                width: 22%;
         }
 
         /* Phone paysage*/
