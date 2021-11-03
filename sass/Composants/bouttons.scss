@@ -183,66 +183,46 @@
 {
     background-color: $color-tertiaire;
     position: absolute;
-    display: flex;
-
+        position: absolute;
+       
+        padding : 4px 5px 5px 5px;
+        font-weight: bold;
+   
     /*Desktop*/
-    @media screen and (min-width : 801px) and (orientation : landscape){
-        margin-left: 400px;
+    @media screen and (min-width : 801px) {
+        margin-left: 250px;
         margin-top: 10px;
-        border-radius: 10px;
+        border-radius: 5px;
+        width: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 1.2em;
+        padding-left: 10px;
     }
 
     /* Tablette paysage*/
-    @media screen and (min-width : 1023px) and (orientation : landscape) {
+   /* @media screen and (min-width : 1023px) and (orientation : landscape) {
         margin-left: 400px;
         margin-top: 10px;
         border-radius: 10px;
     }
 
     /* Tablette portrait*/
-    @media screen and (min-width : 1023px) and (orientation : portrait) {
+  /*  @media screen and (min-width : 1023px) and (orientation : portrait) {
         margin-left: 70%;
         margin-top: 30px;
         border-radius: 20px;
     }
 
     /* Phone paysage*/
-    @media screen and (max-width : 800px) and (orientation : landscape) {
-        margin-left: 70%;
+    @media screen and (max-width : 800px)  {
+        margin-left: 75%;
         margin-top: 30px;
         border-radius: 20px;
+        width: 250px;
+        padding: 30px 10px;
+        font-size: 4em;
     }
 
-    /*Phone*/
-    @media screen and (max-width : 800px) {
-        margin-left: 70%;
-        margin-top: 30px;
-        border-radius: 20px;
-    }
     
-    span{
-        color: #006400;
-        font-family: "Roboto", sans-serif;
-
-        /*Desktop*/
-        @media screen and (min-width : 801px) and (orientation : landscape) {
-            font-size: 20px;
-            padding: 10px;
-            margin: 0;
-        }
-
-        /* Phone paysage*/
-        @media screen and (max-width : 800px) and (orientation : landscape) {
-            font-size: 50px;
-            padding: 30px;
-            margin: 0;
-        }  
-    
-        /*Phone*/
-        @media screen and (orientation : portrait) {
-            font-size: 50px;
-            padding: 30px;
-            margin: 0;
-        }
-    }
 }

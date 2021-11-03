@@ -1,13 +1,10 @@
-
-body
-{
+body {
     @media screen and (max-width : 800px) {
-        width:100%;
+        width: 100%;
     }
 }
 
-.Acceuil
-{
+.Acceuil {
     background-color: white;
 
     /* Desktop*/
@@ -27,7 +24,7 @@ body
         justify-content: center;
         margin-top: 180px;
     }
-    
+
     /*Phone*/
     @media screen and (max-width : 800px) {
         width: 100%;
@@ -37,8 +34,8 @@ body
     animation: Loading 1000ms $load-delay both;
 }
 
-#Search_Fonctionnement
-{
+#Search_Fonctionnement {
+
     /* Desktop*/
     @media screen and (min-width : 801px) and (orientation : landscape) {
         display: flex;
@@ -67,8 +64,7 @@ body
     }
 }
 
-#Search
-{
+#Search {
     display: flex;
     flex-direction: column;
     background-color: $color-fond-clair;
@@ -76,7 +72,7 @@ body
     left: 0;
 
     /* Desktop*/
-    @media screen and (min-width : 801px) and (orientation : landscape){
+    @media screen and (min-width : 801px) and (orientation : landscape) {
         width: 40%;
         margin-right: 25px;
         padding: 40px;
@@ -87,8 +83,7 @@ body
         width: 100%;
     }
 
-    .Zone_de_Saisie
-    {
+    .Zone_de_Saisie {
         background-color: $color-fond-fonce;
         position: absolute;
         left: 0;
@@ -102,7 +97,7 @@ body
         align-items: baseline;
 
         /* Desktop*/
-        @media screen and (min-width : 801px) and (orientation : landscape){
+        @media screen and (min-width : 801px) and (orientation : landscape) {
             font-size: 1em;
             height: 2em;
         }
@@ -112,27 +107,29 @@ body
             font-size: 5em;
             height: 2em;
         }
-    
+
         /*Phone*/
         @media screen and (orientation : portrait) {
             font-size: 5em;
             height: 2em;
         }
-        p{
+
+        p {
             font-family: "Roboto", sans-serif;
             font-style: normal;
 
             /* Desktop*/
-            @media screen and (min-width : 801px) and (orientation : landscape){
+            @media screen and (min-width : 801px) and (orientation : landscape) {
                 margin-top: 7px;
-                padding:0;
+                padding: 0;
             }
+
             /* Phone paysage*/
             @media screen and (max-width : 800px) and (orientation : landscape) {
                 padding-left: 0;
                 margin-top: 25px;
             }
-        
+
             /*Phone*/
             @media screen and (orientation : portrait) {
                 padding-left: 0;
@@ -140,24 +137,25 @@ body
             }
         }
 
-        i{
+        i {
+
             /* Desktop*/
             @media screen and (min-width : 801px) and (orientation : landscape) {
                 margin: 0;
                 padding-right: 10px;
             }
-        
+
         }
     }
-   
-    h2
-    {
+
+    h2 {
         font-family: "Roboto", sans-serif;
         font-style: normal;
         justify-content: center;
         text-align: center;
+
         /* Desktop*/
-        @media screen and (min-width : 801px) and (orientation : landscape){
+        @media screen and (min-width : 801px) and (orientation : landscape) {
             font-size: 30px;
         }
 
@@ -168,8 +166,8 @@ body
             padding-right: 5%;
             padding-left: 5%;
         }
-        
-    
+
+
         /*Phone*/
         @media screen and (max-width : 800px) and (orientation : portrait) {
             font-size: 6em;
@@ -179,15 +177,14 @@ body
         }
     }
 
-    h3
-    {
+    h3 {
         font-family: "Roboto-Light", sans-serif;
-        font-style:normal;
+        font-style: normal;
         justify-content: center;
         text-align: center;
 
         /* Desktop*/
-        @media screen and (min-width : 801px) and (orientation : landscape){
+        @media screen and (min-width : 801px) and (orientation : landscape) {
             font-size: 20px;
             margin-bottom: 30px;
         }
@@ -199,7 +196,7 @@ body
             padding-right: 5%;
             padding-left: 5%;
         }
-    
+
         /*Phone*/
         @media screen and (orientation : portrait) {
             font-size: 4em;
@@ -209,23 +206,21 @@ body
         }
     }
 
-    input
-    {
+    input {
         margin-left: 15%;
         margin-right: 15%;
     }
 }
 
 
-
-#Fonctionnement
-{
+#Fonctionnement {
     display: flex;
     flex-direction: column;
     background-color: white;
-    
+    justify-content: center;
+
     /* Desktop*/
-    @media screen and (min-width : 801px) and (orientation : landscape){
+    @media screen and (min-width : 801px) and (orientation : landscape) {
         font-size: 1em;
         width: 40%;
         margin-left: 25px;
@@ -235,24 +230,27 @@ body
     @media screen and (max-width : 800px) and (orientation : landscape) {
         font-size: 4em;
         width: 90%;
+        margin-left: 75px;
+
     }
 
     /*Phone*/
     @media screen and (max-width : 800px) and (orientation : portrait) {
         font-size: 4em;
         width: 90%;
+        margin-left: 75px;
     }
 }
 
 
-#Restaurants
-{
+#Restaurants {
     background-color: $color-fond-clair;
     margin-bottom: 5%;
+    margin-left: 5%;
 
 
     /* Desktop*/
-    @media screen and (min-width : 801px) and (orientation : landscape){
+    @media screen and (min-width : 801px) {
         width: 100%;
     }
 
@@ -260,7 +258,8 @@ body
     @media screen and (max-width : 800px) and (orientation : landscape) {
         padding: 0;
         padding-bottom: 5%;
-        width: 100%;
+        width: 98%;
+        margin: 0;
     }
 
     /*Phone*/
@@ -268,105 +267,194 @@ body
         padding: 0;
         padding-bottom: 5%;
         width: 98%;
+        margin: 0;
     }
 
-    #Liste_Menu
-    {
-        /* Desktop*/
-        @media screen and (min-width : 801px) and (orientation : landscape){
+    #Liste_Menu {
+
+        /* Desktops*/
+        @media screen and (min-width : 801px) {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
             align-content: center;
             align-items: center;
+            width: 100%;
+        }
+
+        /* phones*/
+        @media screen and (max-width : 800px) {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
         }
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 
-    h2{
-        
+    h2 {
+
         color: black;
 
         /* Desktop*/
-        @media screen and (min-width : 801px) and (orientation : landscape){
+        @media screen and (min-width : 801px) and (orientation : landscape) {
             padding-left: 1em;
             margin: 0;
         }
 
         /* Phone paysage*/
         @media screen and (max-width : 800px) and (orientation : landscape) {
-            font-size: 8em;   
+            font-size: 8em;
             padding-top: 0.5em;
-            padding-left: 0.5em;   
+            padding-left: 0.5em;
         }
-    
+
         /*Phone*/
         @media screen and (orientation : portrait) {
-            font-size: 8em;   
+            font-size: 8em;
             padding-top: 0.5em;
-            padding-left: 0.5em;     
+            padding-left: 0.5em;
         }
     }
-    
 
-    .Bloc_Menu
-    {
-        display: flex;
-        background-color: white;
+
+
+    .Bloc_Menu {
+
         @include Ombre;
 
-        /* Desktop*/
-        @media screen and (min-width : 801px) and (orientation : landscape){
-                height: 15em;
-                margin: 1em; 
-                border-radius: 30px;
-                width: 22%;
+        @media screen and (min-width : 800px) {
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+            border-radius: 30px;
+            width: 22%;
+            height: 300px;
         }
 
-        /* Phone paysage*/
-        @media screen and (max-width : 800px) and (orientation : landscape) {
+        /* Phone*/
+        @media screen and (max-width : 800px) {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            margin-top: 50px;
+            border-radius: 30px;
             height: 60em;
-            margin: 4em;    
-            border-radius: 50px; 
+            border-radius: 50px;
+
         }
+
+      
+
+        .bas-menu {
+
+                flex: 4 0 auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            
+            
+
+            .Bloc_Menu_Affichage {
+                @media screen and (min-width : 801px) {
+                    flex: 4 0 auto;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .Bloc_Menu_Texte {
+
+                    /* Desktop*/
+                    @media screen and (min-width : 801px) and (min-width : 1024px) {
+                        padding: 0.3em;
+                        padding-left: 2em;
+                    }
+
+                }
+            }
+
+
+
+            .icons {
+               
+                    flex: 1 0 auto;
+                    top: -1000px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                
+
+
+
+                .heart {
+                    position: absolute;
+                    color: #000;
+                }
+
+                .anim {
+                    background: linear-gradient(#9356dc, #ff79da);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    transform: scale(0);
+                }
+            }
+
+
+            .icons:hover .anim {
+                transform-origin: bottom;
+                transform: scale(1);
+                transition: transform 1000ms;
+            }
+
+            .icons:hover .heart {
+                color: transparent;
+            }
+
+        }
+
+        .haut-menu {
+            
+            img {
+                width: 100%;
     
-        /*Phone*/
-        @media screen and (orientation : portrait) {
-            height: 60em;
-            margin: 4em;    
-            border-radius: 50px; 
+                /* Desktop*/
+                @media screen and (min-width : 801px) and (orientation : landscape) {
+                    border-radius: 30px 30px 0 0;
+                    height: 220px;
+                    object-fit: cover;
+                }
+    
+                /* Phones*/
+                @media screen and (max-width : 800px) {
+                    border-radius: 50px 50px 0 0;
+                    height: 40em;
+                    width: 100%;
+                    object-fit: cover;
+                }
+    
+               
+            }
         }
 
-        img
-        {
-            width: 100%;
-            height: 70%;
-            object-fit: cover;
+
+
+
+       
+        
+
+        h2 {
 
             /* Desktop*/
-            @media screen and (min-width : 801px) and (orientation : landscape){
-                border-radius: 30px 30px 0 0;
-            }
-
-            /* Phone paysage*/
-            @media screen and (max-width : 800px) and (orientation : landscape) {
-                border-radius: 50px 50px 0 0;
-            }
-    
-            /*Phone*/
-            @media screen and (orientation : portrait) {
-                border-radius: 50px 50px 0 0;
-            }
-        }
-
-        h2{
-
-            /* Desktop*/
-            @media screen and (min-width : 801px) and (orientation : landscape){
+            @media screen and (min-width : 801px) and (orientation : landscape) {
                 font-size: 1.5em;
                 padding: 0;
                 margin: 0;
@@ -378,7 +466,7 @@ body
                 margin: 0;
                 margin-bottom: 0.3em;
             }
-        
+
             /*Phone*/
             @media screen and (orientation : portrait) {
                 font-size: 5em;
@@ -387,11 +475,12 @@ body
             }
         }
 
-        h3{
+        h3 {
             margin: 0;
             color: #7e7e7e;
+
             /* Desktop*/
-            @media screen and (min-width : 801px) and (orientation : landscape){
+            @media screen and (min-width : 801px) and (orientation : landscape) {
                 font-size: 1em;
             }
 
@@ -400,7 +489,7 @@ body
                 font-size: 4em;
                 padding-left: 0.5em;
             }
-        
+
             /*Phone*/
             @media screen and (orientation : portrait) {
                 font-size: 4em;
@@ -408,10 +497,11 @@ body
             }
         }
 
-        i{
+        i {
             padding-right: 1em;
+
             /* Desktop*/
-            @media screen and (min-width : 801px) and (orientation : landscape){
+            @media screen and (min-width : 801px) and (orientation : landscape) {
                 font-size: 1.5em;
                 margin-right: 1em;
             }
@@ -420,30 +510,22 @@ body
             @media screen and (max-width : 800px) and (orientation : landscape) {
                 font-size: 6em;
             }
-        
+
             /*Phone*/
             @media screen and (orientation : portrait) {
                 font-size: 6em;
             }
+
+
+
         }
+
+
+
+
     }
 
 
-    .Bloc_Menu_Affichage
-    {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
 
-    .Bloc_Menu_Texte
-    {
-        /* Desktop*/
-        @media screen and (min-width : 801px) and (min-width : 1024px) {
-            padding: 0.3em;
-            padding-left: 2em;
-        }
-    
-    }
+
 }

@@ -65,26 +65,4 @@
     }
 }
 
-/*Animation coeur*/
-.anim {
-    margin-top: 2px;
-    position: absolute;
-    background: linear-gradient(#9356dc, #ff79da);
-    background-clip: text;
-  -webkit-background-clip:text;
-  color: transparent;
-    transform: scale(0);
-}
-.icons:hover .anim {
-    transform-origin: bottom;
-    transform: scale(1);
-    transition: transform 1000ms;
-}
-.heart {
-    position: relative;
-    color: #000;
-}
-.icons:hover .heart {
-    color: transparent;
-}
 
