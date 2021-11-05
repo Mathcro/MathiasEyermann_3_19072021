@@ -251,7 +251,8 @@ body
         padding: 0;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-family: "Roboto",sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
 
         /* Desktop*/
         @media screen and (min-width : 801px) and (orientation : landscape) {
@@ -657,7 +658,7 @@ body
         padding: 0;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-family: "Roboto",sans-serif;
+        font-family: "Roboto", sans-serif !important;
 
         /* Desktop*/
         @media screen and (min-width : 801px) and (orientation : landscape) {
