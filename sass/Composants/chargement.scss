@@ -52,7 +52,6 @@ $load-delay: $char-bar-dur + $char-bar-delay;
 .Loader{
     position: absolute;
     height: 100%;
-    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,6 +74,12 @@ $load-delay: $char-bar-dur + $char-bar-delay;
     @media screen and (max-width : 800px) and (orientation : landscape) {
         width: 85em;
         top: 200px;
+    }
+
+    /* tablette portrait*/
+    @media screen and (min-width : 800px) and (orientation : portrait) {
+        width: 85em;
+        margin-top: 100px;
     }
 
     /*Phone*/
@@ -101,6 +106,11 @@ $load-delay: $char-bar-dur + $char-bar-delay;
     /* Phone paysage*/
     @media screen and (max-width : 800px) and (orientation : landscape) {
         font-size: 90px;
+    }
+
+    /* tablette portrait*/
+    @media screen and (min-width : 800px) and (orientation : portrait) {
+        font-size: 70px;
     }
 
     /*Phone*/

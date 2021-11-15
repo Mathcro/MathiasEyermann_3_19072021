@@ -207,11 +207,14 @@
         border-radius: 10px;
     }
 
-    /* Tablette portrait*/
-  /*  @media screen and (min-width : 1023px) and (orientation : portrait) {
-        margin-left: 70%;
+    /* tablette portrait*/
+    @media screen and (min-width : 800px) and (orientation : portrait) {
+        margin-left: 72%;
         margin-top: 30px;
         border-radius: 20px;
+        width: 250px;
+        padding: 30px 10px;
+        font-size: 4em;
     }
 
     /* Phone paysage*/
