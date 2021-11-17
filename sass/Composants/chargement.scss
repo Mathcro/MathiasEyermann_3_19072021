@@ -83,8 +83,14 @@ $load-delay: $char-bar-dur + $char-bar-delay;
     }
 
     /*Phone*/
-    @media screen and (max-width : 800px) {
+    @media screen and (min-width : 341px) and (max-width : 800px) {
         width: 85em;
+        margin-top: 100px;
+    }
+    
+    /*Galaxie fold*/
+    @media screen and (min-width : 0px) and (max-width : 340px) {
+        width: 70em;
         margin-top: 100px;
     }
 
@@ -114,9 +120,15 @@ $load-delay: $char-bar-dur + $char-bar-delay;
     }
 
     /*Phone*/
-    @media screen and (max-width : 800px) {
+    @media screen and (min-width : 341px) and (max-width : 800px) {
         font-size: 90px;
     }
+
+    /*Galaxie fold*/
+    @media screen and (min-width : 0px) and (max-width : 340px) {
+        font-size: 70px;
+    }
+
 
 
     &:nth-child(1){

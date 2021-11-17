@@ -1,11 +1,6 @@
-body {
-    @media screen and (max-width : 800px) {
-        width: 100%;
-    }
-}
-
 .Acceuil {
     background-color: white;
+    
 
     /* Desktop*/
     @media screen and (min-width : 801px) {
@@ -26,8 +21,9 @@ body {
     }
 
     /*Phone*/
-    @media screen and (max-width : 800px) {
-        width: 100%;
+    @media screen and (min-width : 341px) and (max-width : 800px) {
+        width: 85em;
+        
     }
 
 
@@ -254,11 +250,21 @@ body {
     }
 
     /*Phone*/
-    @media screen and (max-width : 800px) and (orientation : portrait) {
+    @media screen and (min-width : 341px) and (max-width : 800px) and (orientation : portrait) {
         font-size: 4em;
         width: 90%;
         margin-left: 75px;
     }
+
+    /*Galaxie fold*/
+    @media screen and (min-width : 0px) and (max-width : 340px) {
+        font-size: 3.5em;
+        width: 90%;
+        margin-left: 75px;
+    }
+
+
+
 }
 
 
