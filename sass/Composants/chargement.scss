@@ -83,8 +83,14 @@ $load-delay: $char-bar-dur + $char-bar-delay;
     }
 
     /*Phone*/
-    @media screen and (max-width : 800px) {
+    @media screen and (min-width : 351px) and (max-width : 800px) {
         width: 85em;
+        margin-top: 100px;
+    }
+
+    /*Galaxie Fold*/
+    @media screen and (min-width : 0px) and (max-width : 351px) {
+        width: 65em;
         margin-top: 100px;
     }
 

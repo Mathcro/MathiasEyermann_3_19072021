@@ -8,6 +8,15 @@
     }
 }
 
+@keyframes Anim_icon_galaxie_fold{
+    0% {
+        transform: translate(20px);
+    }
+    100% {
+        transform: translate(100px);
+    }
+}
+
 @keyframes Anim_icon_desktop{
     0% {
         transform: translate(0px);
@@ -51,6 +60,16 @@
     }
     100% {
         width: 20em;
+        border-right: 200px solid $color-tertiaire;
+    }
+}
+
+@keyframes Choix_Menu_galaxie_fold{
+    0% {
+        border-right: 0px solid $color-tertiaire;
+    }
+    100% {
+        width: 14em;
         border-right: 200px solid $color-tertiaire;
     }
 }
